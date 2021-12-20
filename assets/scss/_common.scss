@@ -1,0 +1,225 @@
+
+
+/*===========================
+    1. COMMON css 
+===========================*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+ body {
+	font-family: $Barlow;
+	font-weight: normal;
+	font-style: normal;
+    color: $text-color;
+	background: #311768;
+	overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    @include box-sizing (border-box);
+}
+
+img {
+	max-width: 100%;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover{
+	text-decoration: none;
+}
+
+i,
+span,
+a{
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $Barlow;
+	font-weight: 700;
+	color: $heading-color;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul,ol {
+	margin: 0px;
+	padding: 0px;
+    list-style-type: none;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: $text-color;
+	margin: 0px;
+}
+
+.bg_cover{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.slick-slide {
+	outline: 0;
+}
+
+// others common css here
+
+
+
+/*===== All Button Style =====*/
+
+.main-btn {
+	display: inline-block;
+	font-weight: 700;
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+	vertical-align: middle;
+	@include user-select(none);
+	border: 0px;
+	padding: 0 32px;
+	font-size: 14px;
+	line-height: 50px;
+    color: $white !important;
+    cursor: pointer;
+    z-index: 5;
+    @include transition(0.4s);
+	border-radius: 4px;
+	background: linear-gradient(to right, #c90075 0%, #de00ac 50%, #c90075 100%);
+	background-size: 200% auto;
+	letter-spacing: 1px;
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1),inset 0px -1px 1px 0px rgba(255, 255, 255, 0.2);
+	&:hover{
+		background-position: right center;
+	}
+    
+    &.main-btn-2{
+        background: linear-gradient(to right, #0065e8 0%, #11a2f1 50%, #0065e8 100%);
+        background-size: 200% auto;
+		&:hover{
+			background-position: right center;
+		}
+    }
+    
+    &.main-btn-3{
+        background: linear-gradient(to right, #ffa600 0%, #ffc50c 50%, #ffa600 100%);
+        background-size: 200% auto;
+		&:hover{
+			background-position: right center;
+		}
+    }
+}
+
+
+
+
+
+
+
+.section-title{
+	& span{
+		font-size: 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $theme-color;
+		position: relative;
+		@media #{$xs} {
+			font-size: 16px;
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			left: -58px;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 2px;
+			width: 48px;
+			background: $theme-color;
+			@media #{$xs} {
+				width: 20px;
+				left: -30px;
+			}
+		}
+		&::after{
+			position: absolute;
+			content: '';
+			right: -58px;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 2px;
+			width: 48px;
+			background: $theme-color;
+			@media #{$xs} {
+				width: 20px;
+				right: -30px;
+			}
+		}
+	}
+	& .title{
+		font-size: 50px;
+		line-height: 60px;
+		font-weight: 600;
+		padding: 8px 10px 19px;
+		color: $white;
+		@media #{$lg} {
+			font-size: 38px;
+			line-height: 48px;
+		}
+		@media #{$xs} {
+			font-size: 30px;
+			line-height: 40px;
+		}
+		@media #{$sm} {
+			font-size: 38px;
+			line-height: 48px;
+		}
+	}
+	&.section-title-2{
+		& span{
+			color: $white;
+		}
+		& .title{
+			color: $white;
+			-webkit-text-fill-color: white;
+		}
+	}
+}

@@ -1,0 +1,119 @@
+
+
+
+/*===========================
+    20.STAKEHOLDERS css 
+===========================*/
+
+
+
+
+.stakeholders-area{
+	padding-top: 190px;
+	padding-bottom: 195px;
+	position: relative;	
+	@media #{$xs} {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	& .banefits-color-2{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		width: 100%;
+	}
+	& .stakeholders-btn{
+		& .nav{
+			& a{
+				font-size: 24px;
+				font-weight: 600;
+				color: #ada2c3;
+				line-height: 68px;
+				background-color: transparent;
+				padding: 0;
+				@include transition(0.3s);
+				position: relative;
+				&::before{
+					position: absolute;
+					content: '';
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					height: 2px;
+					width: 0px;
+					background: $theme-color;
+					@include transition(0.3s);
+				}
+				&.active{
+					color: $white;
+					padding-left: 28px;
+					&::before{
+						width: 18px;
+					}
+				}
+			}
+		}
+	}
+	& .stakeholders-price{
+		padding-top: 84px;
+
+		& ul{
+			display: flex;
+			& li{
+				&:last-child{
+					margin-left: 75px;
+					position: relative;
+					@media #{$xs} {
+						margin-left: 70px;
+					}
+					@media #{$sm} {
+						margin-left: 70px;
+					}
+					&::before{
+						position: absolute;
+						content: '';
+						left: -40px;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 1px;
+						height: 30px;
+						background: #66448d;
+					}
+				}
+				& span{
+					font-size: 12px;
+					font-weight: 500;
+					color: $white;
+				}
+				& p{
+					font-size: 20px;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: $theme-color;
+				}
+			}
+		}
+	}
+	& .stakeholders-thumb{
+		margin-left: -30px;
+		@media #{$lg} {
+			margin-left: 0;
+		}
+		@media #{$md} {
+			margin-left: 0;
+		}
+		@media #{$xs} {
+			margin-left: 0;
+		}
+		& img{
+			width: 100%;
+		}
+	}
+	& .section-title{
+		& .title{
+			padding: 8px 0px 45px;
+		}
+	}
+}

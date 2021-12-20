@@ -1,0 +1,249 @@
+
+
+
+/*===========================
+    11.FUTURE ROADMAP css 
+===========================*/
+
+.future-roadmap{ width: 100%; height: 100%; padding: 192px 0 195px 0; position: relative;
+	@media #{$xs} {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.container{ padding: 0; 
+
+	}
+	.baseline{ width: 100vw; height: 3px; background-color: #7c219b; margin-top: -8.5px; }
+	.roadmap-main, .roadmap-sec{ position: relative; height: 500px; }
+	// .roadmap-sec .swiper-wrapper > .roadmap-sec-slide:not(.swiper-slide-active){ display: none; }
+	// .roadmap-sec .swiper-wrapper > .swiper-slide-next{ display: block; }
+	.roadmap-main-slide{ position: relative; }
+	.roadmap-sec-slide{ position: relative; height: 100%; width: auto;
+		.circle-div{ display: flex; flex-direction: column; align-items: center; width: max-content; height: max-content;
+			position: absolute; bottom: 0; @include transition(.25s);
+			h6{ font-size: 30px; color: white; margin-bottom: 9px; @include transition(.25s); }
+			.circle{ width: 17px; height: 17px; border-radius: 50%; background-color: white; }
+		}
+		.content{ position: absolute; bottom: 0; left: 8.5px; width: max-content; opacity: 0; @include transition(.25s);
+			&-wrapper{ padding: 0 0 48px 40px; }
+			&::before{ content: ""; position: absolute; left: 8px; display: block; width: 2px; height: 100%; background-color: #ffc50c; }
+			h6{ font-size: 30px; color: white; }
+			ul{
+				li{ font-size: 16px; color: #ada2c3; margin: 8px 0; 
+					&::before{ content: "\f00c"; font-family: "Font Awesome 5 Pro"; font-weight: 600; margin-right: 5px;
+						display: inline-block; color: #ffc50c; }
+				}
+			}
+			.progress-bar-wrapper{ width: 100%; margin-top: 35px;
+				&-text{ width: 100%; display: flex; flex-direction: row; justify-content: space-between; color: white;
+					font-size: 14px; margin-bottom: 10px;
+				}
+				&-actual{ width: 100%; height: 9px; background-color: #2b135d; border-radius: 20px; position: relative;
+					&::before{ content: ""; display: block; width: 42%; height: 5px; 
+						background-color: #ffcc2d; border-radius: 20px; position: absolute; top: 2px; left: 3px;  }
+				}
+			}
+		}
+		&:nth-child(1){ .content{ &::before{ left: 5px; } } }
+		&:nth-child(4){ .circle-div{ right: 0; } } 
+		&:nth-child(3), &:nth-child(2){ .circle-div{ left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
+		&:nth-child(2){ transform: translateX(-50px); }
+		@include transition(.25s);
+		&.active,
+		&:hover{
+			&.swiper-slide-active {
+				transform: translateX(0);
+			}
+			&:nth-child(2) {
+				transform: translateX(-100px);
+				.circle-div{ left: 0; -webkit-transform: translateX(0); transform: translateX(0); }
+			}
+			&:nth-child(3) {
+				.circle-div{ left: 0; -webkit-transform: translateX(0); transform: translateX(0); }
+			}
+			&:nth-child(4) {
+				transform: translateX(-80px);
+				.circle-div{ left: 0; }
+			}
+			.circle-div{ h6{ opacity: 0; } }
+			.content{ opacity: 1; transition-delay: .25s; }
+		}
+	}
+	.swiper-pagination-bullet{ width: auto; height: auto; background: transparent; outline: 0;
+		font-size: 30px; color: white; margin: 0 10px;
+	}
+	.roadmap-main-arrow{ width: 49px; height: 49px; border-radius: 50%; background-color: #43218b; outline: 0; 
+		position: absolute; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); cursor: pointer; 
+		display: flex; justify-content: center; align-items: center; color: white; @include transition(.25s);
+		&:hover{
+			color: #43218b; background-color: white;
+		}
+	}
+	.roadmap-main-prev{ left: 10%; }
+	.roadmap-main-next{ right: 10%; }
+	@media #{$laptop} {
+		.roadmap-main-prev{ left: 5%; }
+		.roadmap-main-next{ right: 5%; }
+	}
+	@media(max-width: 992px) {
+		.roadmap-main-arrow{ display: none; }
+	}
+	.roadmap-map{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		opacity: .1;
+		z-index: -1;
+	}
+	.banefits-color-2{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		width: 100%;
+	}
+}
+
+
+
+
+
+.future-roadmap-area{
+	padding-top: 192px;
+	padding-bottom: 195px;
+	position: relative;
+	background-size: 100% 100%;
+	overflow: hidden;
+	z-index: 10;
+	@media #{$md} {
+		background-size: cover;
+	}
+	@media #{$xs} {
+		background-size: 220% 100%;
+	}
+	@media #{$sm} {
+		background-size: cover;
+	}
+	& .banefits-color-2{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		width: 100%;
+	}
+	& .future-roadmap-thumb{
+		position: absolute;
+		left: 0;
+		bottom: 120px;
+		z-index: -1;
+		@media #{$laptop} {
+			width: 25%;
+			bottom: 0;
+		}
+		@media #{$lg} {
+			width: 25%;
+		}
+		@media #{$md} {
+			width: 26%;
+			bottom: 0;
+		}
+		@media #{$xs} {
+			width: 50%;
+			bottom: 0;
+		}
+		@media #{$sm} {
+			width: 26%;
+			bottom: 0;
+		}
+	}
+	& .roadmap-map{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		opacity: .1;
+		z-index: -1;
+	}
+	& .section-title{
+		padding-bottom: 52px;
+	}
+	& .future-roadmap-item{
+		position: relative;
+		& i{
+			position: absolute;
+			top: 37px;
+			right: -20px;
+			font-size: 30px;
+			color: $white;
+			@media #{$xs} {
+				right: 0;
+			}
+		}
+		&  span{
+			font-weight: 600;
+			color: $white;
+		}
+		& .title{
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 28px;
+			color: $white;
+			padding-top: 55px;
+			position: relative;
+			@media #{$md} {
+				font-size: 22px;
+			}
+			&::before{
+				position: absolute;
+				content: '';
+				left: 50%;
+				top: 20px;
+				height: 17px;
+				width: 17px;
+				background: $white;
+				border-radius: 50%;
+				transform: translateX(-50%);
+
+			}
+			&::after{
+				position: absolute;
+				content: '';
+				left: 0;
+				top: 27px;
+				height: 2px;
+				width: 112%;
+				background: $white;
+				border-radius: 0%;
+				@media #{$md} {
+					width: 100%;
+				}
+				@media #{$xs} {
+					width: 100%;
+				}
+
+			}
+		}
+		& p{
+			font-size: 18px;
+			line-height: 28px;
+			color: $white;
+			padding: 28px 15px 0;
+			@media #{$lg} {
+				padding: 28px 0 0;
+			}
+			@media #{$md} {
+				padding: 28px 0 0;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+
+
+

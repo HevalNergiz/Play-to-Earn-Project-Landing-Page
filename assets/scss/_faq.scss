@@ -1,0 +1,225 @@
+
+
+
+/*===========================
+    13.FAQ css 
+===========================*/
+
+
+
+
+.faq-area{
+	padding-bottom: 200px;
+	padding-top: 193px;
+    position: relative;
+    @media #{$xs} {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    & .banefits-color-2{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 100%;
+    }
+	& .section-title{
+        & p{
+            font-size: 18px;
+            line-height: 30px;
+            color: #ada2c3;
+            padding: 13px 50px 0;
+            @media #{$xs} {
+                padding: 13px 0 0;
+            }
+        }
+		& .nav{
+			display: inline-block;
+			border-radius: 0px;
+			padding: 0px;
+			margin-top: 24px;
+			& li{
+				display: inline-block;
+				& a{
+					padding: 0;
+					line-height: 50px;
+					padding: 0 13px;
+					border-radius: 0px;
+					background: transparent;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: #ada2c3;
+					letter-spacing: 1px;
+                    font-size: 24px;
+                    @media #{$xs} {
+                        padding: 0 8px;
+                        font-size: 14px;
+                    }
+                    @media #{$sm} {
+                        padding: 0 20px;
+                        font-size: 24px;
+                    }
+					&.active{
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+.faq-accrodion{
+    margin-top: 50px;
+    margin-right: 0px;
+    @media #{$md} {
+        margin-top: 30px;
+        margin-right: 0;
+    }
+    @media #{$xs} {
+        margin-top: 30px;
+        margin-right: 0;
+    }
+    & .accrodion{
+        position: relative;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+        background-color: rgba(39, 17, 86, 0.6);
+        border-radius: 4px;
+
+        &+.accrodion{
+            margin-top: 10px;
+        }
+        &.active{
+            & .accrodion-inner{
+                background-color: transparent;
+            }
+            &::before{
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+
+            }
+            & .accrodion-title{
+                padding-bottom: 0;
+                &::before{
+                    opacity: 0;
+                }
+                &::after{
+                    opacity: 1;
+                    color: $theme-color;
+                }
+            }
+        }
+        & .accrodion-inner{
+            background-color: transparent;
+            padding: 30px 0;
+            position: relative;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            border-radius: 0px;
+
+        }
+        & .accrodion-title{
+            padding: 0px 38px;
+            cursor: pointer;
+            position: relative;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            @media #{$xs} {
+                padding: 0 38px 0 20px;
+            }
+            &::before{
+                content: '+';
+                font-size: 42px;
+                color: $theme-color;
+                text-align: center;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                opacity: 1;
+                -webkit-transition: all 500ms ease;
+                transition: all 500ms ease;
+                @media #{$xs} {
+                    right: 20px;
+                }
+            }
+            &::after{
+                content: '-';
+                font-weight: 400;
+                font-size: 42px;
+                color: $theme-color;
+                text-align: center;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                opacity: 0;
+                -webkit-transition: all 500ms ease;
+                transition: all 500ms ease;
+                @media #{$xs} {
+                    right: 20px;
+                }
+
+            }
+            & h4{
+                margin: 0;
+                color: $white;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 0;
+
+            }
+        }
+        & .accrodion-content{
+            & .inner{
+                padding: 0 38px;
+                padding-right: 30px;
+                padding-top: 33px;
+                padding-bottom: 0px;
+                @media #{$lg} {
+                    padding: 15px 38px 0 40px;
+                }
+                @media #{$xs} {
+                    padding: 0 10px 0 20px;
+                }
+                @media #{$sm} {
+                    padding: 0 38px 0 20px;
+                }
+            }
+            & p{
+                margin: 0;
+                color: #ada2c3;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                padding-right: 50px;
+                @media #{$xs} {
+                    padding-right: 0;
+                    padding-top: 20px;
+                }
+
+            }
+        }
+    }
+}

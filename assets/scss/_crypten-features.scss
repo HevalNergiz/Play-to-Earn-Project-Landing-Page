@@ -1,0 +1,304 @@
+
+
+
+/*===========================
+    19.CRYPTEN FEATURES css 
+===========================*/
+
+
+
+
+
+.crypten-features-area{
+	padding-top: 55px;
+	position: relative;
+	z-index: 11;
+	& .crypten-features-item{
+		position: relative;
+		& img{
+			@include transition(0.3s);
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			right: -15px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 1px;
+			height: 285px;
+			background: #462f77;
+		}
+		& .title{
+			font-size: 24px;
+			font-weight: 600;
+			color: $white;
+			padding-top: 37px;
+		}
+		& p{
+			max-width: 290px;
+			display: inline-block;
+			color: #ada2c3;
+			font-size: 18px;
+			line-height: 30px;
+			padding-top: 32px;
+		}
+		&.item-3{
+			&::before{
+				display: none;
+			}
+		}
+		&:hover{
+			& img{
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+.crypten-trade-area{
+	@media #{$xs} {
+		padding-top: 0px;
+	}
+	& .item-1{
+		position: relative;
+		z-index: 10;
+		@media #{$xs} {
+			margin-top: 100px;
+			margin-bottom: 50px;
+		}
+		&.item-2{
+			z-index: 11;
+			@media #{$xs} {
+				margin-top: 100px;
+			}
+		}
+		& .crypten-color{
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: -2;
+		}
+		& .crypten-trade-thumb{
+			margin-left: -80px;
+			margin-right: 80px;
+			@media #{$laptop} {
+				margin-left: 0;
+				margin-right: 0;
+			}
+			@media #{$lg} {
+				margin-left: 0;
+				margin-right: 0;
+			}
+			@media #{$md} {
+				margin-left: 0;
+				margin-right: 0;
+			}
+			@media #{$xs} {
+				margin-left: 0;
+				margin-right: 0;
+			}
+			& img{
+				width: 100%;
+			}
+		}
+		& .crypten-trade-content{
+			@media #{$md} {
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			@media #{$xs} {
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			& span{
+				font-size: 20px;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: $theme-color;
+				letter-spacing: 1px;
+				padding-left: 57px;
+				position: relative;
+				&::before{
+					position: absolute;
+					content: '';
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					height: 2px;
+					width: 48px;
+					background: $theme-color;
+				}
+			}
+			& > .title{
+				font-size: 50px;
+				line-height: 60px;
+				font-weight: 600;
+				color: $white;
+				letter-spacing: -1px;
+				padding-top: 5px;
+				@media #{$lg} {
+					font-size: 40px;
+					line-height: 50px;
+				}
+				@media #{$xs} {
+					font-size: 28px;
+					line-height: 38px;
+				}
+				@media #{$sm} {
+					font-size: 44px;
+					line-height: 54px;
+				}
+			}
+			& > p{
+				font-size: 18px;
+				line-height: 30px;
+				color: #ada2c3;
+				padding-top: 30px;
+			}
+			& .trade-item{
+				position: relative;
+				padding-left: 100px;
+				& img{
+					position: absolute;
+					left: 0;
+					top: 8px;
+				}
+				& .title{
+					font-size: 20px;
+					font-weight: 600;
+					color: $white;
+					text-transform: uppercase;
+				}
+				& p{
+					font-size: 18px;
+					line-height: 30px;
+					color: #ada2c3;
+					padding-top: 3px;
+				}
+			}
+			& .trade-contracts{
+				position: relative;
+				& i{
+					position: absolute;
+					left: 22px;
+					top: 7px;
+					font-size: 18px;
+					color: $theme-color;
+				}
+				& p{
+					font-size: 18px;
+					line-height: 30px;
+					color: #ada2c3;
+					padding-left: 50px;
+				}
+			}
+		}
+		&.item-2{
+			& .crypten-trade-thumb{
+				margin-right: -80px;
+				margin-left: 80px;
+				@media #{$laptop} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				@media #{$lg} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				@media #{$md} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				@media #{$xs} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				& img{
+					width: 100%;
+				}
+			}
+			& .crypten-color{
+				position: absolute;
+				left: auto;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: -1;
+			}
+			& .crypten-trade-content{
+				& .trade-about-follow{
+					& .title{
+						font-size: 20px;
+						font-weight: 600;
+						color: $white;
+						text-transform: uppercase;
+					}
+					& p{
+						font-size: 18px;
+						line-height: 30px;
+						color: #ada2c3;
+						padding-top: 3px;
+						padding-bottom: 24px;
+
+					}
+					& ul{
+						& li{
+							display: inline-block;
+							& a{
+								font-size: 24px;
+								color: #ada2c3;
+								margin-right: 26px;
+								@include transition(0.3s);
+								&:hover{
+									color: $theme-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.item-4{			
+			& .crypten-trade-thumb{
+				margin-right: -80px;
+				margin-left: 80px;
+				@media #{$laptop} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				@media #{$lg} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				@media #{$md} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				@media #{$xs} {
+					margin-right: 0;
+					margin-left: 0;
+				}
+				& img{
+					width: 100%;
+				}
+			}
+			& .crypten-color{
+				position: absolute;
+				left: auto;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: -1;
+			}
+		}
+	}
+}

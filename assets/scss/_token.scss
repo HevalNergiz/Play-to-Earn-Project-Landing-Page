@@ -1,0 +1,351 @@
+
+
+
+/*===========================
+    8.TOKEN css 
+===========================*/
+
+
+
+.token-area{
+	padding-top: 190px;
+	& .token-border{
+		padding-bottom: 185px;
+		border-bottom: 1px solid #d3d9e6;
+	}
+	& .section-title{
+		& .nav{
+			display: inline-block;
+			border-radius: 4px;
+			background-image: -moz-linear-gradient( 180deg, rgb(0,116,221) 0%, rgb(3,175,242) 100%);
+			background-image: -webkit-linear-gradient( 180deg, rgb(0,116,221) 0%, rgb(3,175,242) 100%);
+			background-image: -ms-linear-gradient( 180deg, rgb(0,116,221) 0%, rgb(3,175,242) 100%);
+			padding: 4px;
+			margin-top: 30px;
+			& li{
+				display: inline-block;
+				& a{
+					padding: 0;
+					line-height: 50px;
+					padding: 0 40px;
+					border-radius: 4px;
+					background: transparent;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: $white;
+					letter-spacing: 1px;
+					@media #{$xs} {
+						padding: 0 10px;
+					}
+					@media #{$sm} {
+						padding: 0 30px;
+					}
+					&.active{
+						background: $white;
+						color: #007de0;
+					}
+				}
+			}
+		}
+	}
+	& .tab-content{
+		& .token-content-list{
+			& .list{
+				padding-left: 150px;
+				@media #{$md} {
+					padding-left: 0;
+				}
+				@media #{$xs} {
+					padding-left: 0;
+				}
+				& ul{
+					& li{
+						font-size: 20px;
+						line-height: 30px;
+						color: #626978;
+						padding-left: 42px;
+						position: relative;
+						@media #{$xs} {
+							padding-left: 30px;
+							font-size: 16px;
+						}
+						&::before{
+							position: absolute;
+							content: '';
+							left: 0;
+							top: 50%;
+							transform: translateY(-50%);
+							height: 22px;
+							width: 22px;
+							border-radius: 50%;
+							background: #2c73dc;
+						}
+						&:nth-child(2){
+							&::before{
+								background: #2d79de;
+							}
+						}
+						&:nth-child(3){
+							&::before{
+								background: #3697e9;
+							}
+						}
+						&:nth-child(4){
+							&::before{
+								background: #42b6f5;
+							}
+						}
+					}
+					&.item{
+						padding-left: 95px;
+						@media #{$md} {
+							padding-left: 50px;
+						}
+						@media #{$xs} {
+							padding-left: 54px;
+						}
+						& li{
+							padding-left: 0;
+							& span{
+								font-size: 20px;
+								color: #2f3541;
+								font-weight: 600;
+								line-height: 30px;
+							}
+							&::before{
+								display: none;
+							}
+						}
+					}
+				}
+				&.item-2{
+					padding-left: 50px;
+					@media #{$md} {
+						padding-left: 0;
+					}
+					@media #{$xs} {
+						padding-left: 0;
+					}
+					& ul{
+						& li{
+							&::before{
+								background: #44cafc;
+							}
+							&:nth-child(2){
+								&::before{
+									background: #46d2ff;
+								}
+							}
+							&:nth-child(3){
+								&::before{
+									background: #7fe0ff;
+								}
+							}
+						}
+						&.item{
+							padding-left: 150px;
+							@media #{$md} {
+								padding-left: 105px;
+							}
+							@media #{$xs} {
+								padding-left: 95px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.token-2-area{
+		padding-top: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.token-sale-area{
+	padding-top: 190px;
+	position: relative;
+	padding-bottom: 200px;
+	@media #{$xs} {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	& .section-title{
+		padding: 8px 10px 90px;
+	}
+	& .banefits-color-2{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		width: 100%;
+	}
+	& .token-sale-item{
+		background-color: rgba(42, 18, 92,.4);
+		border-radius: 4px;
+		padding: 30px 0px;
+		& .circle-1,
+		& .circle-3,
+		& .circle-4{
+			position: relative;
+			& strong{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 40px;
+				font-weight: 600;
+				color: $white;
+			}
+		}
+		& span{
+			font-size: 14px;
+			font-weight: 600;
+			color: $white;
+			text-transform: uppercase;
+			padding-top: 10px;
+		}
+		& p{
+			font-weight: 700;
+			color: $theme-color;
+			text-transform: uppercase;
+			padding-bottom: 7px;
+		}
+		& .item{
+			margin: 0 45px;
+			position: relative;
+			&::before{
+				position: absolute;
+				content: '';
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 1px;
+				height: 30px;
+				background: #594283;
+			}
+			& ul{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				& li{
+					font-size: 14px;
+					font-weight: 500;
+					color: #ada2c3;
+					line-height: 24px;
+
+				}
+			}
+		}
+	}
+	& .token-sale-start{
+		background-color: rgba(42, 18, 92,.4);
+		border-radius: 4px;
+		padding: 20px 0px;
+		text-align: center;
+		position: relative;
+		&::before{
+			position: absolute;
+			content: '';
+			left: 50%;
+			top: -10px;
+			transform: translateX(-50%);      
+			width: 0;
+			height: 0;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 10px solid rgba(42, 18, 92,.4);
+		}
+		& span{
+			font-size: 14px;
+			font-weight: 500;
+			color: #ada2c3;
+			text-transform: uppercase;
+		}
+		& p{
+			font-size: 14px;
+			font-weight: 500;
+			color: $white;
+			text-transform: uppercase;
+		}
+
+	}
+	& .token-sale-active{
+		& .slick-arrow{
+			position: absolute;
+			top: -70px;
+			transform: translateX(-50%);
+			height: 50px;
+			width: 50px;
+			text-align: center;
+			line-height: 50px;
+			border-radius: 50%;
+			background: #2b135e;
+			color: #ada2c3;
+			font-size: 30px;
+			cursor: pointer;
+			z-index: 99;
+			@include transition(0.3s);
+			&:hover{
+				background: $white;
+				color: #2b135e;
+			}
+			&.prev{
+				left: 47%;
+				@media #{$md} {
+					left: 46%;
+				}
+				@media #{$xs} {
+					left: 40%;
+				}
+				@media #{$sm} {
+					left: 45%;
+				}
+
+			}
+			&.next{
+				left: 53%;
+				@media #{$md} {
+					left: 54%;
+				}
+				@media #{$xs} {
+					left: 60%;
+				}
+				@media #{$sm} {
+					left: 55%;
+				}
+
+			}
+		} 
+	}
+	& .token-sale-btn{
+		@media #{$xs} {
+			text-align: center;
+		}
+		& ul{
+			& li{
+				display: inline-block;
+				@media #{$xs} {
+					margin-top: 10px;
+				}
+				@media #{$sm} {
+					margin-top: 0px;
+				}
+				& a{
+					margin: 0 3px;
+
+				}
+			}
+		}
+	}
+}
+

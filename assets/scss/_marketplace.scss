@@ -1,0 +1,103 @@
+
+
+
+/*===========================
+    7.MARKETPLACE css 
+===========================*/
+
+
+
+
+.marketplace-area{
+	background: #f0f5fd;
+	& .section-title{
+		padding-bottom: 42px;
+	}
+	& .marketplace-item{
+		background: $white;
+		padding: 26px 42px 47px;
+		position: relative;
+		box-shadow: 0px 4px 0px 0px rgba(159, 177, 204, 0.1);
+		border-radius: 5px 5px 0 0;
+		@media #{$lg} {
+			padding: 26px 20px 47px;
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			left: 55px;
+			bottom: -15px;
+			width: 0;
+			height: 0;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 15px solid $white;
+		}
+		& img{
+			position: absolute;
+			right: 40px;
+			top: 70px;
+		}
+		& span{
+			font-size: 24px;
+			font-weight: 500;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-image: -moz-linear-gradient(0deg, #03aff2 0%, #0074dd 100%);
+			background-image: -webkit-linear-gradient(0deg, #03aff2 0%, #0074dd 100%);
+		}
+		& .title{
+			font-weight: 500;
+			color: $heading-color;
+			font-size: 24px;
+			line-height: 30px;
+			padding-top: 5px;
+		}
+		& p{
+			font-size: 18px;
+			color: #626978;
+			line-height: 30px;
+			padding-top: 30px;
+		}
+		&.item-2{
+			background-image: -moz-linear-gradient( 90deg, rgb(255,255,255) 80%, rgb(238,244,253) 100%);
+			background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 80%, rgb(238,244,253) 100%);
+			background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 80%, rgb(238,244,253) 100%);
+			box-shadow: 0px 4px 0px 0px rgba(159, 177, 204, 0.1);
+			& span{
+				-webkit-text-fill-color: #626978;
+				text-transform: uppercase;
+				font-size: 16px;
+			}
+			&::before{
+				display: none;
+			}
+		}
+	}
+	& .marketplace-btn{
+		margin-top: 45px;
+		& ul{
+			& li{
+				display: inline-block;
+				& a{
+					border-bottom: 0;
+					margin: 0 4px;
+					box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1),inset 0px -1px 0px 0px rgba(0, 0, 0, 0.2);
+					@media #{$xs} {
+						margin-bottom: 10px;
+					}
+					@media #{$sm} {
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

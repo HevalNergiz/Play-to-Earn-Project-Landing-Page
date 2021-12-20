@@ -1,0 +1,101 @@
+
+
+
+/*===========================
+    12.TEAM css 
+===========================*/
+
+
+
+
+.team-area{
+	padding-top: 190px;
+	padding-bottom: 196px;
+	position: relative;
+	@media #{$xs} {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	& .banefits-color-2{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		width: 100%;
+	}
+	& .section-title{
+		& .title{
+			padding: 8px 10px 0;
+
+		}
+	}
+	& .team-item{
+		border-radius: 5px;
+		overflow: hidden;
+		& .team-thumb{
+			position: relative;
+			overflow: hidden;
+			& img{
+				width: 100%;
+				opacity: .8;
+				@include transition(0.3s);
+			}
+
+		}
+		& .team-content{
+			background-color: rgba(39, 17, 86, 0.6);
+			padding-top: 39px;
+			padding-left: 40px;
+			padding-bottom: 20px;
+			position: relative;
+			@media #{$lg} {
+				padding-left: 20px;
+			}
+			@media #{$xs} {
+				padding-left: 20px;
+			}
+			& ul{
+				position: absolute;
+				left: 40px;
+				top: -25px;
+				& li{
+					display: inline-block;
+					& a{
+						color: $theme-color;
+						font-size: 30px;
+						margin-right: 6px;
+						@include transition(0.4s);
+						&:hover{
+							color: $white;
+						}
+					}
+				}
+			}
+			& .title{
+				font-size: 24px;
+				font-weight: 500;
+				color: $white;
+				@media #{$lg} {
+					font-size: 20px;
+				}
+			}
+			& span{
+				font-size: 13px;
+				font-weight: 500;
+				margin-top: -3px;
+				color: #ada2c3;
+			}
+		}
+		&:hover{
+			& .team-thumb{
+				& img{
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+}
+
+

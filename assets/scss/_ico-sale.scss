@@ -1,0 +1,183 @@
+
+
+
+/*===========================
+    4.ICO SALE css 
+===========================*/
+
+
+
+
+.ico-sale-area{
+	& .ico-sale-item{
+		border-bottom: 1px solid #d3d9e6;
+		padding-bottom: 25px;
+		margin-right: -45px;
+		@media #{$md} {
+			margin-right: 0;
+		}
+		@media #{$xs} {
+			margin-right: 0;
+		}
+		& .title{
+			font-size: 24px;
+			font-weight: 600;
+			
+		}
+		& .ico-sale-flex{
+			& .ico-sale-raised{
+				margin-left: 80px;
+				@media #{$lg} {
+					margin-left: 15px;
+				}
+				@media #{$md} {
+					margin-left: 0;
+					margin-top: 30px;
+				}
+				@media #{$xs} {
+					margin-left: 0;
+					margin-top: 30px;
+				}
+				& .title{
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: $heading-color;
+					padding-bottom: 3px;
+				}
+				& ul{
+					& li{
+						display: inline-block;
+						margin-right: 26px;
+						font-size: 18px;
+						color: #8f98aa;
+						font-weight: 500;
+						position: relative;
+						@media #{$lg} {
+							margin-right: 12px;
+						}
+						&::before{
+							position: absolute;
+							content: '';
+							right: -15px;
+							top: 50%;
+							transform: translateY(-50%);
+							width: 1px;
+							height: 16px;
+							background: #bdc4d3;
+							@media #{$lg} {
+								right: -8px;
+							}
+						}
+						& i{
+							padding-right: 5px;
+						}
+						&:last-child{
+							margin-right: 0;
+							&::before{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	& .ico-sale-btns{
+		margin-bottom: -35px;
+		@media #{$lg} {
+			margin-left: 25px;
+		}
+		@media #{$xs} {
+			margin-left: 0px;
+		}
+		& .main-btn{
+			border-bottom-color: #329a13;
+			@media #{$lg} {
+				padding: 0 10px;
+			}
+		}
+		& ul{
+			margin-top: 10px;
+			& li{
+				display: inline-block;
+				margin: 0 6px;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+#simple_timer{
+	margin-top: 25px;
+	@media #{$xs} {
+		text-align: center;
+		width: 100%;
+	}
+	& .syotimer__body{
+		display: flex;
+		justify-content: center;
+		
+		& .syotimer-cell{
+			margin-right: 16px;
+			text-align: center;
+			@media #{$lg} {
+				margin-right: 6px;
+			}
+			@media #{$xs} {
+				margin-bottom: 30px;
+			}
+			@media #{$sm} {
+				margin-bottom: 0px;
+			}
+			& .syotimer-cell__value{
+				font-size: 60px;
+				font-weight: 500;
+				color: #271156;
+				background: $white;
+				height: 75px;
+				width: 70px;
+				text-align: center;
+				line-height: 75px;
+				border: 0;
+				border-radius: 6px;
+				@media #{$lg} {
+					font-size: 50px;
+				}
+				@media #{$xs} {
+					font-size: 30px;
+					height: 50px;
+					width: 50px;
+					line-height: 50px;
+				}
+				@media #{$sm} {
+					font-size: 50px;
+					height: 75px;
+					width: 75px;
+					line-height: 75px;
+				}
+			}
+			& .syotimer-cell__unit{
+				font-size: 13px;
+				color: #ada2c3;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin-top: 10px;
+			}
+			&:last-child{
+				&::before{
+					width: 0;
+				}
+			}
+			&.syotimer-cell_type_second{
+				margin-right: 0;
+			}
+		}
+	}
+}
+

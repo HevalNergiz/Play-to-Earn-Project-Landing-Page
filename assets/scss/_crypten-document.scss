@@ -1,0 +1,90 @@
+
+
+
+/*===========================
+    9.CRYPTEN DOCUMENTS css 
+===========================*/
+
+
+
+.crypten-documents-area{
+	padding-top: 180px;
+	padding-bottom: 90px;
+	& .section-title{
+		padding-bottom: 42px;
+	}
+	& .crypten-documents-btns{
+		display: flex;
+		justify-content: center;
+		& ul{
+			@media #{$xs} {
+				text-align: center;
+				width: 100%;
+			}
+			& li{
+				display: inline-block;
+				@media #{$xs} {
+					margin-bottom: 10px;
+					@media #{$xs} {
+						width: 100%;
+					}
+				}
+				& a{
+					width: 370px;
+					background-color: rgb(13, 192, 254);
+					border-radius: 4px;
+					box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.1),inset 0px -2px 0px 0px rgba(0, 0, 0, 0.1);
+					line-height: 75px;
+					padding-left: 30px;
+					font-size: 24px;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: $white;
+					position: relative;
+					margin: 0 3px;
+					@media #{$md} {
+						width: 335px;
+					}
+					@media #{$xs} {
+						width: 100%;
+					}
+					& i{
+						position: absolute;
+						right: 30px;
+						top: 50%;
+						transform: translateY(-50%);
+						font-size: 20px;
+						color: $white;
+					}
+				}
+				&:last-child{
+					& a{
+						background-color: rgb(0, 122, 223);
+					}
+				}
+			}
+		}
+		&.item-2{
+			& ul{
+				& li{
+					& a{
+						background-color: rgb(0, 173, 238);
+					}
+					&:last-child{
+						& a{
+							background-color: rgb(0, 99, 189);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

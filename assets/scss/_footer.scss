@@ -1,0 +1,144 @@
+
+
+
+/*===========================
+    16.FOOTWR css 
+===========================*/
+
+
+
+
+.footer-area{
+	padding-top: 166px;
+	padding-bottom: 200px;
+	position: relative;
+	@media #{$xs} {
+		padding-bottom: 100px;
+		padding-top: 100px;
+	}
+	& .banefits-color-2{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		width: 100%;
+	}
+	& .footer-list{
+		& .title{
+			font-size: 14px;
+			font-weight: 600;
+			color: $theme-color;
+			text-transform: uppercase;
+			padding-bottom: 48px;
+		}
+		& ul{
+			& li{
+				& a{
+					font-size: 18px;
+					line-height: 40px;
+					color: $white;
+					@include transition(0.3s);
+					&:hover{
+						color: $theme-color;
+					}
+				}
+			}
+		}
+		& .input-box{
+			position: relative;
+			& button{
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: transparent;
+				border: 0;
+				color: $theme-color;
+				font-size: 16px;
+			}
+			& input{
+				width: 100%;
+				height: 55px;
+				padding-left: 20px;
+				background-color: rgba(42, 18, 92, 0.6);
+				border: 0;
+				border-radius: 4px;
+				color: #ada2c3;
+				&::placeholder{
+					opacity: 1;
+					color: #ada2c3;
+				}
+			}
+		}
+	}
+	& .footer-copyright{
+		margin-top: 85px;
+		@media #{$xs} {
+			text-align: center;
+			flex-wrap: wrap;
+			justify-content: center !important;
+		}
+		@media #{$sm} {
+			text-align: center;
+			flex-wrap: wrap;
+			justify-content: space-between !important;
+		}
+		@media ( max-width: 991.98px ) {
+			flex-direction: column;
+		}
+		& p{
+			font-size: 14px;
+			font-weight: 500;
+			color: #ada2c3;
+			@media #{$xs} {
+				padding-top: 20px;
+			}
+			@media #{$sm} {
+				padding-top: 0px;
+			}
+		}
+		& ul{
+			& li{
+				display: inline-block;
+				& a{
+					font-size: 20px;
+					color: white;
+					margin-left: 26px;
+					@include transition(0.3s);
+					@media #{$xs} {
+						margin-left: 18px;
+					}
+					&:hover{
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+/*	 scroll_up  css*/
+
+#scroll_up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background: $theme-color;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
