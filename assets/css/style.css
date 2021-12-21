@@ -217,7 +217,7 @@ p {
     z-index: 99;
     background-color: transparent;
     padding: 0 15px;
-    border-bottom: 1px solid #442d76;
+    border-bottom: 0px solid #442d76;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-nav {
@@ -298,7 +298,7 @@ p {
         top: 106%;
         left: 0;
         width: 100%;
-        background-color: #113156cc;
+        background-color: #00123e94;
         z-index: 8;
         padding: 10px 16px;
         -webkit-box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
@@ -311,7 +311,7 @@ p {
         top: 106%;
         left: -15px;
         width: 106%;
-        background-color: #113156cc;
+        background-color: #00123e94;
         z-index: 8;
         padding: 10px 16px;
         -webkit-box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
@@ -334,7 +334,7 @@ p {
 .header-nav .navigation .navbar .navbar-nav .nav-item a {
     font-size: 16px;
     font-weight: 500;
-    color: #ada2c3;
+    color: #ffffff;
     text-transform: uppercase;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -4087,7 +4087,7 @@ p {
 .crypten-features-area .crypten-features-item p {
     max-width: 290px;
     display: inline-block;
-    color: #ada2c3;
+    color: #e9e9e9;
     font-size: 18px;
     line-height: 30px;
     padding-top: 32px;
@@ -4222,7 +4222,7 @@ p {
 .crypten-trade-area .item-1 .crypten-trade-content > p {
     font-size: 18px;
     line-height: 30px;
-    color: #ada2c3;
+    color: #e9e9e9;
     padding-top: 30px;
 }
 .crypten-trade-area .item-1 .crypten-trade-content .trade-item {
@@ -4243,7 +4243,7 @@ p {
 .crypten-trade-area .item-1 .crypten-trade-content .trade-item p {
     font-size: 18px;
     line-height: 30px;
-    color: #ada2c3;
+    color: #e9e9e9;
     padding-top: 3px;
 }
 .crypten-trade-area .item-1 .crypten-trade-content .trade-contracts {
@@ -4391,7 +4391,7 @@ p {
 .stakeholders-area .stakeholders-btn .nav a {
     font-size: 24px;
     font-weight: 600;
-    color: #ada2c3;
+    color: #e9e9e9;
     line-height: 68px;
     background-color: transparent;
     padding: 0;
