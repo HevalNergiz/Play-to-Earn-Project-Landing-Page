@@ -91,9 +91,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #b4bdff;
+  color: #f5f6ff;
   text-align: left;
-  background-color: #2e3880;
+  background-color: #26bfca;
 }
 
 [tabindex="-1"]:focus {
@@ -4757,7 +4757,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #b4bdff;
+  color: #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -4772,7 +4772,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #ffe934;
 }
 
 .navbar-dark .navbar-toggler {
@@ -9585,7 +9585,7 @@ a.text-success:hover, a.text-success:focus {
 }
 
 .text-info {
-  color: #ff78cb !important;
+  color: #ffe934 !important;
 }
 
 a.text-info:hover, a.text-info:focus {
@@ -9750,17 +9750,16 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn-outline-secondary {
-  color: #6d70ff;
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border-color: #6d70ff;
-  color: #b4bdff;
+  border-color: #ffe934;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #6d70ff;
-  border-color: #6d70ff;
+  background-color: #ffe934;
+  border-color: #ffe934;
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
@@ -9855,7 +9854,8 @@ a:hover {
 }
 
 .highlight {
-  color: #ff78cb;
+  color: #ffe934;
+  font-weight: 800;
 }
 
 .hero {
@@ -9952,11 +9952,11 @@ a:hover {
 }
 
 .section-highlight {
-  background-color: #20284d;
+  background-color:#003140;
 }
 
 .section-separated, .testimonials {
-  background-color: #293171;
+  background-color: #003140;
 }
 
 .light .section-separated, .light .testimonials {
@@ -9964,7 +9964,7 @@ a:hover {
 }
 
 .section-highlight-text {
-  color: #b4bdff;
+  color: #fff8bb;
 }
 
 /*---------------------------------------------------
@@ -10275,7 +10275,7 @@ a:hover {
   left: 8px;
   height: 100%;
   width: 4px;
-  background: #ff78cb;
+  background: #ffe934;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -10321,8 +10321,8 @@ a:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: solid 4px #ff78cb;
-  background: #2e3880;
+  border: solid 4px #ffe934;
+  background: #003140;
 }
 
 .light .cd-timeline__milestone {
@@ -10354,7 +10354,7 @@ a:hover {
 .cd-timeline__date {
   padding: 0 0 .4em 0;
   text-transform: uppercase;
-  color: #ff78cb;
+  color: #ffe934;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 0.7rem;
