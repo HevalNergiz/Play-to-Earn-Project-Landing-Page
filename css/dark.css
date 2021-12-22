@@ -9848,7 +9848,7 @@ a:hover {
 
 .graph img {
   width: 100%;
-  margin: -5rem 0 -10rem;
+  margin: 2rem 0 0 0;
   z-index: -1;
   position: relative;
 }
@@ -9887,17 +9887,19 @@ a:hover {
   Featured
 ---------------------------------------------------*/
 .feature-item {
-  text-align: center;
+  text-align: start;
   margin: 1rem auto;
 }
 
 .featured-item-icon {
   margin: 1.2rem 0;
+  
 }
 
 .featured-item-title {
   margin-bottom: 1rem;
   font-weight: 400;
+  text-align: start;
 }
 
 /*---------------------------------------------------
