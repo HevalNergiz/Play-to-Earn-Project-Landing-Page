@@ -1,0 +1,139 @@
+.features .baslik, .features p {
+  text-align: left;
+  margin-bottom: .5rem;
+}
+
+.features p {
+  font-family: 'Gilroy-Bold ☞';
+}
+
+.features .col {
+  margin-bottom: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255,255,255);
+  font-family: 'Gilroy-Bold ☞';
+}
+
+.sekiller {
+  position: absolute!important;
+}
+
+@media (max-width: 768px) {
+  .forpc {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .formobile {
+    display: none;
+  }
+}
+
+.featurescont::-webkit-scrollbar {
+  display: none;
+}
+
+.features .baslik {
+  font-family: 'Rezland Logotype Font';
+}
+
+.features img {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .renklikutular {
+    margin-top: -9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dogdiv {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 768px) {
+  .dogdiv {
+    transform: scale(0.6);
+    left: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dogdiv {
+    transform: scale(0.8);
+    left: 46%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pcdegoster {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobildegoster {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .headergorsel2 {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .headergorsel2 {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerbaslik {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerbaslik {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-grid .item .box {
+    height: 499px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid .item .box {
+    height: 400px;
+  }
+}
+
+.team-grid h3 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+
+.team-grid h6 {
+  text-align: center;
+  /*margin-top: 1rem;*/
+  font-family: 'Gilroy-Light ☞';
+}
+
+@media (max-width: 768px) {
+  .features {
+    margin: 0;
+  }
+}
+
