@@ -51,6 +51,12 @@
 }
 
 @media (max-width: 768px) {
+  .renklikutular {
+    margin-top: -5rem;
+  }
+}
+
+@media (max-width: 768px) {
   .dogdiv {
     transform: scale(0.9);
   }
@@ -123,6 +129,7 @@
   margin-top: 1rem;
   margin-bottom: 0;
   font-size: 1.8rem;
+  color: #000000;
 }
 
 .team-grid h6 {
@@ -135,5 +142,45 @@
   .features {
     margin: 0;
   }
+}
+
+@media (min-width: 576px) {
+  .sekiller.sekil3 {
+    right: 15%;
+    width: 9rem;
+    top: 23%;
+    z-index: -7;
+    opacity: 0.62;
+  }
+}
+
+@media (max-width: 576px) {
+  .sekiller.sekil3 {
+    right: 3%;
+    width: 9rem;
+    top: 23%;
+    z-index: -7;
+    opacity: 0.62;
+  }
+}
+
+@media (min-width: 576px) {
+  .mobildegoster {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .masaustondegoster {
+    display: none;
+  }
+}
+
+a, button, .btn, .menu-icon {
+  cursor: url("../../assets/img/cursor_hover.png"), auto!important;
+}
+
+.time-content h2 {
+  font-family: 'Rezland Logotype Font';
 }
 
