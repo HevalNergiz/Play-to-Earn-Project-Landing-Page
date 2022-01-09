@@ -1,53 +1,29 @@
 .rgblen {
   position: relative;
-  text-align: center;
-  color: #252B37;
-  background-color: #151823;
+  /*text-align: center;*/
+  /*color: #252B37;*/
+  /*background-color: #151823;*/
   animation: textColor 10s ease infinite;
 }
 
-@media (max-width: 768px) {
-  .rgblen:after {
-    position: absolute;
-    content: "";
-    top: 15%;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.75);
-    -webkit-filter: blur(5vw);
-    -moz-filter: blur(5vw);
-    -ms-filter: blur(5vw);
-    filter: blur(5vw);
-    background: linear-gradient(270deg, #0fffc1, #7e0fff);
-    background-size: 200% 200%;
-    animation: animateGlow 10s ease infinite;
-  }
-}
-
-@media (min-width: 768px) {
-  .rgblen:after {
-    position: absolute;
-    content: "";
-    top: 15%;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.75);
-    -webkit-filter: blur(5vw);
-    -moz-filter: blur(5vw);
-    -ms-filter: blur(5vw);
-    filter: blur(5vw);
-    background: linear-gradient(270deg, #0fffc1, #7e0fff);
-    background-size: 200% 200%;
-    animation: animateGlow 10s ease infinite;
-  }
+.rgblen:after {
+  position: absolute;
+  content: "";
+  top: 10%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.75);
+  -webkit-filter: blur(7vw);
+  -moz-filter: blur(7vw);
+  -ms-filter: blur(7vw);
+  filter: blur(7vw);
+  background: linear-gradient(270deg, #00ffbd, #7600ff);
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite;
 }
 
 @keyframes animateGlow {
