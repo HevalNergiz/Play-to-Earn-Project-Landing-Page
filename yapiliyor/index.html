@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="assets/css/besttimeline.css">
     <link rel="stylesheet" href="assets/css/buttonmask.css">
     <link rel="stylesheet" href="assets/css/dog.css">
+    <link rel="stylesheet" href="assets/css/hareketli-openbutton.css">
     <link rel="stylesheet" href="assets/css/hoverbutton.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/menubutton.css">
+    <link rel="stylesheet" href="assets/css/mynew%20menu.css">
     <link rel="stylesheet" href="assets/css/retro.css">
     <link rel="stylesheet" href="assets/css/rgblen.css">
     <link rel="stylesheet" href="assets/css/roadmap.css">
@@ -30,18 +32,40 @@
     <link rel="stylesheet" href="assets/css/walk.css">
 </head>
 
-<body class="worklet-canvas light" style="background: #f2f4f8;color: #080808;overflow-x: hidden;padding-bottom: 3rem;cursor: url('assets/img/cursor_def.png'), auto;"><input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
-  	<label for="menu-icon"></label>
-  	<nav class="nav"> 		
-  		<ul class="pt-5">
-  			<li><a href="#">What is Candy Area</a></li>
-  			<li><a href="#">Download App</a></li>
-  			<li><a href="#">Roadmap</a></li>
-  			<li><a href="#">Team</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-  		</ul>
-  	</nav>
+<body class="worklet-canvas light" style="background: #f2f4f8;color: #080808;overflow-x: hidden;padding-bottom: 3rem;cursor: url('assets/img/cursor_def.png'), auto;">
+    <div class="openbtn" onclick="openNav()"></div><header class="cd-header">
+		<div class="header-wrapper">
+			
+			<div class="nav-but-wrap">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>				
+	</header>
+
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="#" class="hover-target">White Paper</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">Features</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">Download App</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">Team</a></li>
+<li class="nav__list-item"><a href="#" class="hover-target">Roadmap</a></li>
+<li class="nav__list-item"><a href="#" class="hover-target">FAQ</a></li>
+<li class="nav__list-item"><a href="#" class="hover-target">Contact</a></li>
+
+			</ul>
+		</div>
+	</div>	
+
+	
+	
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
     <header style="/*margin-bottom: 3rem;*//*padding-bottom: 4rem;*/text-align: center;position: relative;overflow-x: hidden;padding-bottom: 10rem;">
         <nav class="navbar navbar-light navbar-expand container" style="margin-top: 1rem;">
             <div class="container-fluid"><a class="navbar-brand" href="#"><img src="assets/img/coindash-logo.png" style="max-width: 7rem;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -55,7 +79,7 @@
                         <h1 class="headerbaslik" style="font-family: 'Rezland Logotype Font';/*font-weight: 800;*/margin-bottom: 1rem;">Fostering the bridge between gaming and crypto<br></h1>
                         <div style="margin-bottom: 2rem;height: 10px;width: 70px;border-radius: 7px;background: #ffaf00;"></div>
                         <p style="font-family: 'Gilroy-Light ☞';margin-bottom: 2rem;font-size: 17px;line-height: 31.5px;letter-spacing: 2px;">Welcome to <strong>CANDY AREA</strong> , a community driven Ecosystem to create the first <strong>Play to Earn</strong> Candy Crush game and open world multiplayer adventure game in the <strong>Metaverse</strong>.<br></p>
-                        <div class="hover"><link rel="preconnect" href="https://fonts.gstatic.com">
+                        <div class="hover masaustondegoster"><link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 <button class="btn">
 	Buy Candy
@@ -82,6 +106,7 @@
 		</defs>
 </svg>
 </button></div>
+                        <div class="mobildegoster"><button class="btn btn-primary orange" type="button">Buy Candy</button></div>
                     </div>
                 </div>
                 <div class="col d-xxl-flex align-items-xxl-start" style="/*max-width: 45%;*/display: flex;justify-content: space-around;position: relative;"><img data-aos="fade-up-left" data-aos-duration="900" class="sekiller" style="right: -28%;width: 17rem;top: 25%;z-index: 9;" src="assets/img/Torus.png" data-depth="0.70"><img data-aos="fade-up-right" data-aos-duration="850" class="sekiller" style="left: -9%;width: 9rem;top: 40%;z-index: 9;" src="assets/img/Spiral-1.png">
@@ -95,12 +120,12 @@
     <div class="masaustondegoster" style="position: relative;margin-top: 5rem;"><img data-aos="fade-up" data-aos-duration="650" src="assets/img/graphic_text.png" style="width: 100%;"></div>
     <div class="container whitepaperarea" style="z-index: 999;margin-bottom: 4rem;">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
-            <div class="col" style="text-align: center;position: relative;"><img class="img-fluid whitepapercover" src="assets/img/whitepapercover.png" loading="lazy"></div>
-            <div class="col" style="display: grid;align-items: center;padding: 2rem;position: relative;"><img style="position: absolute;right: -3rem;bottom: -4rem;width: 13rem;z-index: -22;" src="assets/img/Glass.png"><img style="position: absolute;right: -6rem;top: -2rem;width: 13rem;z-index: -22;overflow-x: hidden;" src="assets/img/Cube.png">
+            <div class="col" style="text-align: center;position: relative;"><img class="img-fluid whitepapercover" data-aos="fade-right" data-aos-duration="850" src="assets/img/whitepapercover.png" loading="lazy" style="margin-left: -1rem;"></div>
+            <div class="col" style="display: grid;align-items: center;padding: 2rem;position: relative;"><img data-aos="fade-up-right" data-aos-duration="900" style="position: absolute;right: -3rem;bottom: -4rem;width: 13rem;z-index: -22;" src="assets/img/Glass.png"><img data-aos="fade-up-left" data-aos-duration="900" style="position: absolute;right: -6rem;top: -2rem;width: 13rem;z-index: -22;overflow-x: hidden;" src="assets/img/Cube.png">
                 <div>
-                    <h1 style="font-family: 'Rezland Logotype Font';font-size: 4rem;margin-bottom: 1rem;">White Paper</h1>
-                    <p style="font-size: 1.3rem;font-family: 'Gilroy-Light ☞';line-height: 37.2px;">Built forenterprise use, Coin offers banks and Reading the Whitepaper to fully understand the project before investing in it should be prioritized. That’s why we created a this detailed document, which has been reviewed by thir-parties and advisors, that includes legal and insturstry experts<br></p>
-                    <div class="hover"><link rel="preconnect" href="https://fonts.gstatic.com">
+                    <h1 data-aos="fade-left" data-aos-duration="800" style="font-family: 'Rezland Logotype Font';font-size: 4rem;margin-bottom: 1rem;">White Paper</h1>
+                    <p data-aos="fade-left" data-aos-duration="900" style="font-size: 1.3rem;font-family: 'Gilroy-Light ☞';line-height: 37.2px;">Built forenterprise use, Coin offers banks and Reading the Whitepaper to fully understand the project before investing in it should be prioritized. That’s why we created a this detailed document, which has been reviewed by thir-parties and advisors, that includes legal and insturstry experts<br></p>
+                    <div data-aos="fade-left" data-aos-duration="1000" class="hover masaustondegoster"><link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 <button class="btn">
 	Read Whitepaper
@@ -128,6 +153,7 @@
 </svg>
 </button></div>
                 </div>
+                <div class="mobildegoster"><button class="btn btn-primary orange" type="button" style="padding: 0 40px;">Read Whitepaper</button></div>
             </div>
         </div>
     </div>
@@ -215,6 +241,55 @@
             </div>
         </div>
     </div>
+    <div class="roaddiv" style="position: relative;">
+        <div class="container">
+            <h1 data-aos="fade-right" data-aos-duration="850" style="text-align: center;font-family: 'Rezland Logotype Font';font-size: 71px;letter-spacing: 8px;margin-bottom: 0;">Project Roadmap</h1>
+            <div data-aos="fade-left" data-aos-duration="900" style="width: 15rem;margin-left: auto;margin-right: auto;height: 7px;background: linear-gradient(90deg, #ffaf00, #fb9700);border-radius: 2rem;margin-bottom: 2rem;"></div>
+            <p data-aos="fade-left" data-aos-duration="1000" style="text-align: center;font-family: 'Gilroy-Light ☞';margin-bottom: 1.5rem;">The roadmap focuses on the development of the<br> technology, operations infrastructure, new partnerships, and marketing<br> initiatives.<br></p>
+        </div>
+        <div class="row" style="margin: 0;overflow-x: hidden;">
+            <div class="col">
+                <div class="timeline-steps aos-init aos-animate" style="overflow-x: hidden;">
+                    <div data-aos="fade-up" data-aos-duration="800" class="timeline-step">
+                        <div class="timeline-content" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-bs-container="body" type="button">
+                            <div data-bss-hover-animate="pulse" class="inner-circle"><a href="#"></a></div>
+                            <p class="h6 mt-3 mb-1">START</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="850" data-aos-delay="50" class="timeline-step">
+                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                            <div class="inner-circle"><a href="#" style="width: 2rem;"></a></div>
+                            <p class="h6 mt-3 mb-1">Phase<span class="number">&nbsp;1</span></p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="100" class="timeline-step">
+                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                            <div class="inner-circle"><a href="#"></a></div>
+                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;2</span></p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="950" data-aos-delay="150" class="timeline-step">
+                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                            <div class="inner-circle"><a href="#"></a></div>
+                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;3</span></p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="timeline-step">
+                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                            <div class="inner-circle"><a href="#"></a></div>
+                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;4</span></p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1050" data-aos-delay="250" class="timeline-step">
+                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                            <div class="inner-circle"><a href="#"></a></div>
+                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;5</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="team-grid">
         <div class="container">
             <div class="intro">
@@ -249,55 +324,6 @@
             </div>
         </div>
     </section>
-    <div class="roaddiv" style="position: relative;">
-        <div class="container">
-            <h1 style="text-align: center;font-family: 'Rezland Logotype Font';font-size: 71px;letter-spacing: 8px;margin-bottom: 0;">Project Roadmap</h1>
-            <div style="width: 15rem;margin-left: auto;margin-right: auto;height: 7px;background: linear-gradient(90deg, #ffaf00, #fb9700);border-radius: 2rem;margin-bottom: 2rem;"></div>
-            <p style="text-align: center;font-family: 'Gilroy-Light ☞';margin-bottom: 1.5rem;">The roadmap focuses on the development of the<br> technology, operations infrastructure, new partnerships, and marketing<br> initiatives.<br></p>
-        </div>
-        <div class="row" style="margin: 0;overflow-x: hidden;">
-            <div class="col">
-                <div class="timeline-steps aos-init aos-animate" style="overflow-x: hidden;">
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-bs-container="body" type="button">
-                            <div data-bss-hover-animate="pulse" class="inner-circle"><a href="#"></a></div>
-                            <p class="h6 mt-3 mb-1">START</p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                            <div class="inner-circle"><a href="#" style="width: 2rem;"></a></div>
-                            <p class="h6 mt-3 mb-1">Phase<span class="number">&nbsp;1</span></p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                            <div class="inner-circle"><a href="#"></a></div>
-                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;2</span></p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                            <div class="inner-circle"><a href="#"></a></div>
-                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;3</span></p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                            <div class="inner-circle"><a href="#"></a></div>
-                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;4</span></p>
-                        </div>
-                    </div>
-                    <div class="timeline-step">
-                        <div class="timeline-content" data-bs-toggle="popover" data-bs-trigger="hover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-                            <div class="inner-circle"><a href="#"></a></div>
-                            <p class="h6 mt-3 mb-1">phase<span class="number">&nbsp;5</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="row" style="margin: 0;">
         <div class="col">
             <div style="margin-top: 5rem;">
@@ -335,11 +361,13 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/animm.js"></script>
     <script src="assets/js/hover.js"></script>
+    <script src="assets/js/newmenu.js"></script>
     <script src="assets/js/sphere.js"></script>
     <script src="assets/js/timrline.js"></script>
 </body>
