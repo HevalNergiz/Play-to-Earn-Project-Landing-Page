@@ -184,10 +184,8 @@ a, button, .btn, .menu-icon {
   font-family: 'Rezland Logotype Font';
 }
 
-@media (min-width: 768px) {
-  .bannercol {
-    padding: 0;
-  }
+.bannercol {
+  padding: 0;
 }
 
 @media (min-width: 768px) {

@@ -3,7 +3,7 @@
 }
 
 .neumorphic {
-  box-shadow: 6px 6px 16px rgba(174, 174, 192, 0.4);
+  box-shadow: 6px 0px 16px rgba(174, 174, 192, 0.4);
 }
 
 .accordion-item {
@@ -11,14 +11,14 @@
   border: 0px;
   margin: 1rem 0;
   border-radius: 12px!important;
-  box-shadow: 6px 6px 16px rgba(174, 174, 192, 0.4);
+  box-shadow: 0px 6px 16px rgba(99,99,99,0.4);
   overflow-y: visible;
 }
 
 .accordion-header {
   font-family: 'Gilroy-Bold ☞';
   font-weight: 800;
-  color: #ffaf00;
+  color: #fb9700;
 }
 
 .accordion-item:first-of-type .accordion-button {
@@ -27,7 +27,7 @@
 
 .accordion-collapse.collapse {
   background-color: #f2f4f8;
-  box-shadow: 6px 6px 16px rgba(174, 174, 192, 0.4),;
+  box-shadow: 0px 6px 16px rgba(99,99,99,0.4);
   border-bottom-left-radius: 12px!important;
   border-bottom-right-radius: 12px!important;
   border-top-right-radius: 0px;
