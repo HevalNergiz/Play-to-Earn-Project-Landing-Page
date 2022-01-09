@@ -271,3 +271,25 @@ a, button, .btn, .menu-icon {
   }
 }
 
+.accordion-body p {
+  font-family: 'Gilroy-Light ☞';
+}
+
+@media (min-width: 768px) {
+  .buyukbaslik {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .buyukbaslik {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bolumdescription {
+    max-width: 50%;
+  }
+}
+

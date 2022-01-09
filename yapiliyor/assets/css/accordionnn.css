@@ -15,7 +15,10 @@
   overflow-y: visible;
 }
 
-.accordion-header h2 {
+.accordion-header {
+  font-family: 'Gilroy-Bold ☞';
+  font-weight: 800;
+  color: #ffaf00;
 }
 
 .accordion-item:first-of-type .accordion-button {
@@ -24,7 +27,7 @@
 
 .accordion-collapse.collapse {
   background-color: #f2f4f8;
-  box-shadow: 6px 6px 16px rgba(174, 174, 192, 0.4), -6px -6px 16px #FFFFFF;
+  box-shadow: 6px 6px 16px rgba(174, 174, 192, 0.4),;
   border-bottom-left-radius: 12px!important;
   border-bottom-right-radius: 12px!important;
   border-top-right-radius: 0px;
@@ -82,9 +85,15 @@
   padding: 0;
 }
 
-.accordion-item .accordion-header {
-  font-family: 'Rezland Logotype Font'!important;
-  font-weight: 800!important;
-  font-size: 4rem;
+@media (min-width: 768px) {
+  #accordion-3 {
+    max-width: 60%;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffaf00;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
 }
 
