@@ -125,3 +125,8 @@
   border-color: #ff8a00;
 }
 
+.roadmapcontent {
+  max-width: 85%;
+  margin: auto;
+}
+
