@@ -301,5 +301,6 @@ a, button, .btn, .menu-icon {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  color: RGBA(255, 255, 255, 0);
 }
 
