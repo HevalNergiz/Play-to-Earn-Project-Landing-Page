@@ -18,7 +18,6 @@
 .accordion-header {
   font-family: 'Gilroy-Bold ☞';
   font-weight: 800;
-  color: #fb9700;
 }
 
 .accordion-item:first-of-type .accordion-button {
@@ -92,9 +91,10 @@
 }
 
 .accordion-button:not(.collapsed) {
-  color: #ffaf00;
+  color: #3699ff;
   background-color: #e7f1ff;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  box-shadow: none;
+  border: none;
 }
 
 .btn.orange {
@@ -128,5 +128,9 @@
 .roadmapcontent {
   max-width: 85%;
   margin: auto;
+}
+
+.playtoearntext {
+  min-width: 60%;
 }
 

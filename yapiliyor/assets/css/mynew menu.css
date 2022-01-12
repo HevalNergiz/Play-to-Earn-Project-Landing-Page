@@ -120,7 +120,7 @@ a:hover {
 }
 
 .logo-wrap a span {
-  color: #8167a9;
+  color: #ffaf00;
 }
 
 .logo-wrap a:hover {
@@ -277,7 +277,7 @@ a:hover {
   width: 5px;
   height: 0;
   opacity: 0;
-  background-color: #8167a9;
+  background-color: #ffaf00;
   z-index: 1;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -451,7 +451,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 1;
-  color: #8167a9;
+  color: #ffaf00;
   text-align: center;
   margin-top: 15px;
 }
@@ -489,7 +489,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   text-align: center;
   border: 2px solid #000;
   border-radius: 27px;
-  background: #8167a9;
+  background: #ffaf00;
   position: relative;
   display: inline-block;
 }
@@ -506,7 +506,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 .switched {
-  border-color: #8167a9 !important;
+  border-color: #ffaf00 !important;
   background: #000 !important;
 }
 

@@ -46,13 +46,13 @@
 
 @media (min-width: 768px) {
   .renklikutular {
-    /*margin-top: -9rem;*/
+    margin-top: -9rem;
   }
 }
 
 @media (max-width: 768px) {
   .renklikutular {
-    /*margin-top: -5rem;*/
+    margin-top: -4rem;
   }
 }
 
@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .mobildegoster {
     display: none;
   }
@@ -82,7 +82,7 @@
 
 @media (min-width: 768px) {
   .headerbaslik {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -155,24 +155,38 @@ a, button, .btn, .menu-icon {
 }
 
 .time-content h2 {
-  font-family: 'Rezland Logotype Font';
+  font-family: 'Gilroy-Bold ☞';
+  background-image: linear-gradient( 45deg, #ffaf00 33%, #ff6b00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-.bannercol {
-  padding: 0;
+@media (min-width: 768px) {
+  .bannercol {
+    padding: 0;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannercol {
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .bannerbaslik {
     font-family: 'Rezland Logotype Font';
-    font-size: 4rem;
+    font-size: 4.5rem;
     padding-bottom: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .bannerbaslik {
-    font-family: 'Rezland Logotype Font';
+    font-family: 'Gilroy-Bold ☞';
     font-size: 3.2rem;
     padding-bottom: 1rem;
   }
@@ -227,13 +241,13 @@ a, button, .btn, .menu-icon {
 
 @media (max-width: 576px) {
   .whitepaperarea {
-    margin-top: -2rem;
+    /*margin-top: -2rem;*/
   }
 }
 
 @media (min-width: 576px) {
   .whitepaperarea {
-    margin-top: -2rem;
+    /*margin-top: -2rem;*/
   }
 }
 
@@ -279,5 +293,13 @@ a, button, .btn, .menu-icon {
     font-size: 5rem;
     color: #fff;
   }
+}
+
+.gradienttext {
+  background-image: linear-gradient( 45deg, #ffaf00 33%, #ff6b00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
