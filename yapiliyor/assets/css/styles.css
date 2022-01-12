@@ -57,26 +57,6 @@
 }
 
 @media (max-width: 768px) {
-  .dogdiv {
-    transform: scale(0.9);
-  }
-}
-
-@media (min-width: 768px) {
-  .dogdiv {
-    transform: scale(0.6);
-    left: 35%;
-  }
-}
-
-@media (max-width: 768px) {
-  .dogdiv {
-    transform: scale(0.8);
-    left: 46%;
-  }
-}
-
-@media (max-width: 768px) {
   .pcdegoster {
     display: none;
   }
@@ -282,6 +262,22 @@ a, button, .btn, .menu-icon {
 @media (min-width: 768px) {
   .bolumdescription {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hurryup {
+    font-family: 'Rezland Logotype Font';
+    font-size: 3.5rem;
+    color: #fff;
+  }
+}
+
+@media (min-width: 576px) {
+  .hurryup {
+    font-family: 'Rezland Logotype Font';
+    font-size: 5rem;
+    color: #fff;
   }
 }
 

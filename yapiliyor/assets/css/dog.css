@@ -1,4 +1,4 @@
-.main {
+.dogdiv .main {
   position: relative;
   /*width: 37.5vmax;*/
   /*height: 37.5vmax;*/
@@ -8,14 +8,14 @@
   z-index: 9999999;
 }
 
-.leg {
+.dogdiv .leg {
   position: absolute;
   bottom: 0;
   width: 3vmax;
   height: 4.125vmax;
 }
 
-.paw {
+.dogdiv .paw {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -24,7 +24,7 @@
   overflow: hidden;
 }
 
-.paw::before {
+.dogdiv .paw::before {
   content: '';
   position: absolute;
   width: 3.75vmax;
@@ -32,7 +32,7 @@
   border-radius: 50%;
 }
 
-.top {
+.dogdiv .top {
   position: absolute;
   bottom: 0;
   left: 0.75vmax;
@@ -46,13 +46,13 @@
   background-image: linear-gradient(70deg, transparent 20%, #ff8b56 20%);
 }
 
-.dog {
+.dogdiv .dog {
   position: relative;
   /*width: 22.5vmax;*/
   /*height: 8.25vmax;*/
 }
 
-.dog::before {
+.dogdiv .dog::before {
   content: '';
   position: absolute;
   bottom: -0.75vmax;
@@ -65,7 +65,7 @@
   animation: shadow 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
 
-.dog__head {
+.dogdiv .dog__head {
   position: absolute;
   left: 1.5vmax;
   bottom: 0;
@@ -357,6 +357,26 @@
   }
   80%, 85% {
     transform: translateY(0.15vmax);
+  }
+}
+
+@media (max-width: 768px) {
+  .dogdiv {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  .dogdiv {
+    transform: scale(0.8);
+    left: 46%;
+  }
+}
+
+@media (min-width: 768px) {
+  .dogdiv {
+    transform: scale(0.6);
+    left: 35%;
   }
 }
 
