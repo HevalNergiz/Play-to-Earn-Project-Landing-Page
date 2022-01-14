@@ -21,7 +21,7 @@
   color: #ffffff;
   background-color: #ffaf00;
   border-radius: 13px;
-  /*box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);*/
+  box-shadow: none;
   filter: url('#gooey');
   position: relative;
 }
@@ -39,7 +39,7 @@
   color: #ffaf00;
   background-color: #f2f4f8;
   border-radius: 13px;
-  /*box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);*/
+  box-shadow: none;
   filter: url('#gooey');
   position: relative;
   border-style: solid;
@@ -58,7 +58,7 @@
   color: #ffffff;
   background-color: #ffaf00;
   border-radius: 13px;
-  /*box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);*/
+  box-shadow: none;
   filter: url('#gooey');
   position: relative;
 }
