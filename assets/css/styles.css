@@ -435,13 +435,19 @@ a, button, .btn, .menu-icon {
 
 @media (min-width: 768px) {
   .kisalandiv {
-    padding-bottom: 15vh;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .kisalandiv {
+    padding-bottom: 3rem;
   }
 }
 
 @media (max-width: 768px) {
   .kisalandiv {
-    padding-bottom: 9vh;
+    padding-bottom: 4rem;
   }
 }
 
