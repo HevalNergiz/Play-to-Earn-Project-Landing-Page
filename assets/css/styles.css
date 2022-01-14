@@ -1,0 +1,447 @@
+.features .baslik, .features p {
+  text-align: left;
+  margin-bottom: .5rem;
+}
+
+.features p {
+  font-family: 'Gilroy-Bold ☞';
+}
+
+.features .col {
+  margin-bottom: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255,255,255);
+  font-family: 'Gilroy-Bold ☞';
+}
+
+.sekiller {
+  position: absolute!important;
+}
+
+@media (max-width: 768px) {
+  .forpc {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .formobile {
+    display: none;
+  }
+}
+
+.featurescont::-webkit-scrollbar {
+  display: none;
+}
+
+.features .baslik {
+  font-family: 'Rezland Logotype Font';
+}
+
+.features img {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .renklikutular {
+    margin-top: -9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .renklikutular {
+    margin-top: -4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pcdegoster {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobildegoster {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .headergorsel2 {
+    margin-top: 6rem;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headergorsel2 {
+    margin-top: 2rem;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerbaslik {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerbaslik {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-grid .item .box {
+    height: 499px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid .item .box {
+    height: 400px;
+  }
+}
+
+.team-grid h3 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.team-grid h6 {
+  text-align: center;
+  /*margin-top: 1rem;*/
+  font-family: 'Gilroy-Light ☞';
+}
+
+@media (max-width: 768px) {
+  .features {
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .sekiller.sekil3 {
+    right: 15%;
+    width: 9rem;
+    top: 23%;
+    z-index: -7;
+    opacity: 0.62;
+  }
+}
+
+@media (max-width: 576px) {
+  .sekiller.sekil3 {
+    right: 3%;
+    width: 9rem;
+    top: 23%;
+    z-index: -7;
+    opacity: 0.62;
+  }
+}
+
+@media (max-width: 768px) {
+  .masaustondegoster {
+    display: none;
+  }
+}
+
+a, button, .btn, .menu-icon {
+  cursor: url("../../assets/img/cursor_hover.png"), auto!important;
+}
+
+.time-content h2 {
+  font-family: 'Gilroy-Bold ☞';
+  background-image: linear-gradient( 45deg, #ffaf00 33%, #ff6b00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .bannercol {
+    padding: 0;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannercol {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .bannerbaslik {
+    font-family: 'Rezland Logotype Font';
+    font-size: 4.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerbaslik {
+    font-family: 'Gilroy-Bold ☞';
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.timeline-steps .timeline-content .icerik {
+  text-align: left;
+  width: calc(100% + 5px);
+}
+
+.timeline-step {
+  margin: 0;
+}
+
+.h6.mt-3.mb-1 {
+  font-family: 'Rezland Logotype Font';
+  font-size: 1.3rem;
+  z-index: -2;
+}
+
+.number {
+  font-family: 'Gilroy-Bold ☞';
+  font-size: 1.1rem;
+}
+
+.timeline-step {
+}
+
+.inner-circle a {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (min-width: 992px) {
+  .rocket {
+    max-width: 14rem;
+    position: absolute;
+    right: 0;
+    top: -7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .rocket {
+    max-width: 11rem;
+    position: absolute;
+    left: 0;
+    top: -8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .whitepaperarea {
+    /*margin-top: -2rem;*/
+  }
+}
+
+@media (min-width: 576px) {
+  .whitepaperarea {
+    /*margin-top: -2rem;*/
+  }
+}
+
+@media (min-width: 768px) {
+  .whitepapercover {
+    max-height: 500px;
+  }
+}
+
+.accordion-body p {
+  font-family: 'Gilroy-Light ☞';
+}
+
+@media (min-width: 768px) {
+  .buyukbaslik {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .buyukbaslik {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bolumdescription {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hurryup {
+    font-family: 'Rezland Logotype Font';
+    font-size: 3.5rem;
+    color: #fff;
+  }
+}
+
+@media (min-width: 576px) {
+  .hurryup {
+    font-family: 'Rezland Logotype Font';
+    font-size: 5rem;
+    color: #fff;
+  }
+}
+
+.gradienttext {
+  background-image: linear-gradient( 45deg, #ffaf00 33%, #ff6b00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  color: RGBA(255, 255, 255, 0);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0px solid rgba(0,0,0,.2);
+  border-radius: 22px;
+  outline: 0;
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .75rem;
+  border-top: 0px solid #dee2e6;
+  border-bottom-right-radius: calc(.3rem - 1px);
+  border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.modal-header .btn-close {
+  padding: .5rem 1rem;
+  margin: -.5rem -.5rem -.5rem auto;
+}
+
+.btn-close:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(255,255,255,0);
+  opacity: 1;
+}
+
+.btn.orange:hover {
+  padding: 0 58px;
+  height: 60px;
+  font-family: 'Gilroy-Bold ☞';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #ff8a00;
+  border-radius: 13px;
+  border-color: #ff8a00;
+}
+
+.btn.orange.outline:hover {
+  padding: 0 58px;
+  height: 60px;
+  font-family: 'Gilroy-Bold ☞';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #ff8a00;
+  border-radius: 13px;
+  border-color: #ff8a00;
+}
+
+.btn.orange {
+  padding: 0 58px;
+  height: 60px;
+  font-family: 'Gilroy-Bold ☞';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #ffaf00;
+  border-radius: 13px;
+  border-color: #ffaf00;
+}
+
+.btn.orange.outline {
+  padding: 0 58px;
+  height: 60px;
+  font-family: 'Gilroy-Bold ☞';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffaf00;
+  background-color: #f2f4f8;
+  border-radius: 13px;
+  border-color: #ffaf00;
+  border-width: 2px;
+}
+
+#modal-1 {
+  text-align: left;
+}
+
+.toast {
+  width: 350px;
+  max-width: 100%;
+  font-size: .875rem;
+  pointer-events: auto;
+  background-color: rgba(255,255,255,.85);
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  border-radius: 15px;
+}
+
+.toast-header {
+  display: flex;
+  align-items: center;
+  padding: .5rem .75rem;
+  color: #000000;
+  background-color: rgba(255,255,255,.85);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .headergorsel1 {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kisalandiv {
+    padding-bottom: 15vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .kisalandiv {
+    padding-bottom: 9vh;
+  }
+}
+
