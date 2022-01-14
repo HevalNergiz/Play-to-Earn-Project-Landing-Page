@@ -29,12 +29,12 @@
   opacity: 1;
 }
 
-.footer-basic .social {
+social {
   text-align: center;
   padding-bottom: 25px;
 }
 
-.footer-basic .social > a {
+.social > a {
   font-size: 24px;
   width: 40px;
   height: 40px;
@@ -48,7 +48,7 @@
   opacity: 0.75;
 }
 
-.footer-basic .social > a:hover {
+.social > a:hover {
   opacity: 0.9;
 }
 

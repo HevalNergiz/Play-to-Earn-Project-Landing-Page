@@ -71,12 +71,14 @@
 @media (max-width: 768px) {
   .headergorsel2 {
     margin-top: 6rem;
+    border-radius: 20px;
   }
 }
 
 @media (min-width: 768px) {
   .headergorsel2 {
     margin-top: 2rem;
+    border-radius: 30px;
   }
 }
 
@@ -423,5 +425,23 @@ a, button, .btn, .menu-icon {
   border-bottom: 1px solid rgba(0,0,0,.05);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .headergorsel1 {
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kisalandiv {
+    padding-bottom: 15vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .kisalandiv {
+    padding-bottom: 9vh;
+  }
 }
 
