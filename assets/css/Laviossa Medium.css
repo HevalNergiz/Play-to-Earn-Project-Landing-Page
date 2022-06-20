@@ -3,4 +3,5 @@
 	src: url(../../assets/fonts/Laviossa-Medium.woff) format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: auto;
 }
